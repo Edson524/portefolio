@@ -1,9 +1,15 @@
 <!doctype html>
 <html lang="pt-PT">
-  <head>
-    <meta charset="UTF-8" />
-    <title>Contactos | Edson Monteiro</title>
-  </head>
+   <head>
+        <meta charset="UTF-8">
+        <meta
+            name="description"
+            content="Entre em Contacto com Edson Monteiro, piloto virtual e entusiasta automóvel. Descubra como enviar mensagens, projectos e informações de contacto.">
+        </meta name="author" content="Edson Monteiro">
+        <meta name="keywords" content="Edson Monteiro, Portefolio, Piloto Virtual, Entusiasta Automóvel, Gran Turismo, Projectos, Contactos">
+        
+        <title>Edson Monteiro | Gran Turismo</title> 
+    </head>
   <body>
     <header id="topo">
             <img
@@ -24,15 +30,74 @@
             </nav>
         </header>
     <main>
-      <section>
-        <h2>Vamos Conversar?</h2>
-        <p>
-          Estou disponível para novas oportunidades de estágio e colaboração a
-          partir de 2027. Podem entrar em contacto comigo através dos seguintes
-          canais:
-        </p>
+      <section  id="formulario-contatos">
+        <h2>Envie uma mensagem</h2>
+        <p><em>
+          Se preferir pode enviar uma mensgem diretamente no formulário abaixo
+        </p></em>
+        
+        <form action="#" method="get">
 
-        <section>
+          <label for="NomeCompleto">Nome Completo</label><br>
+          <input type="text" 
+           name="NomeCompleto" 
+           id="NomeCompleto"
+           placeholder="Digite Seu Nome Completo"
+           /><br><br>
+            
+          <label for="DataDeNascimento">Data de Nascimento</label><br>
+          <input type="date" 
+           name="DataDeNascimento" 
+           id="DataDeNascimento"
+           /><br><br>
+
+          <label for="palavra-passe">Palavra-passe</label><br>
+          <input type="password" 
+           name="palavra-passe" 
+           id="palavra-passe"
+           placeholder="Digite Sua Palavra-passe"
+           /><br><br>
+
+          <select name="Sexo">
+            <option value="">Selecione seu sexo</option>
+            <option value="M">Masculino</option> 
+            <option value="F">Feminino</option>
+            <option value="O">Relampago Mcqueen</option>  
+            <option value="N">Preto</option>  
+            <option value="N">Otimus Prime</option>
+            <option value="N">Nigger</option>
+          </select><br><br>
+
+          <textarea 
+            id="descricao"
+            name="descricao"
+            cols="60"
+            rows="6"
+            placeholder="Digite uma descrição sobre porque es esse sexo">
+          </textarea><br><br>
+          
+          <label for="telefone">Telefone</label>
+          <input 
+            type="radio"
+            id="telefone"
+            name="preferencia"
+            checked
+          />
+          <label for="email">Email</label>
+          <input 
+            type="radio"
+            id="email"
+            name="preferencia"
+          />
+          <br><br>
+          <label for="autorizacao">Autorizacao para uso de dados introduzidos</label>
+          <input type="checkbox" id="autorizacao" name="autorizacao">
+           <br><br>
+          <button type="submit">Enviar</button>
+          <button type="reset">Limpar</button>
+        </form>
+      </section>
+      <section>
                 <h2 style="color: rgb(21, 0, 255);">Contatos</h2>
                 <table>
                   <thead>
@@ -66,6 +131,7 @@
         </aside>
       </section>
     </main>
+
     <footer>
             <hr/>
             <p>&copy; <i><strong>All Rights Reserved, Edson Monteiro / 2026</strong></i></p>
