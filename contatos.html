@@ -1,0 +1,184 @@
+<!doctype html>
+<html lang="pt-PT">
+   <head>
+        <meta charset="UTF-8"/>
+        <meta
+            name="description"
+            content="Entre em Contacto com Edson Monteiro, piloto virtual e entusiasta automóvel. Descubra como enviar mensagens, projectos e informações de contacto.">
+        </meta name="author" content="Edson Monteiro"/>
+        <meta name="keywords" content="Edson Monteiro, Portefolio, Piloto Virtual, Entusiasta Automóvel, Gran Turismo, Projectos, Contactos"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+        <title>Edson Monteiro | Gran Turismo</title>
+        <link rel="stylesheet" href="CSS/style.css">
+        <link rel="icon" type="image/svg+xml" href="img/favicon.svg">
+    </head>
+  <body>
+    <header id="topo">
+            <img
+                src="img/gtr_35.jpg"
+                alt="GTR-35"
+                width="640"
+                height="430" 
+            />
+<!-- Sobre Min -->
+            <h1>EDSON MONTEIRO</h1>
+            <p><i>Piloto Virtual e Entusiasta Automóvel | </i><strong>20 Anos</strong></p>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Início</a></li>
+                    <li><a href="projetos.html">Projectos</a></li>
+                    <li><a href="contatos.html">Contactos</a></li>
+                </ul>
+            </nav>
+        </header>
+    <main>
+      <!-- Secção com o formulário para o visitante enviar uma mensagem. -->
+      <section  id="formulario-contacto">
+        <!-- Título que identifica a finalidade do formulário. -->
+        <h2>Envie uma mensagem</h2>
+        <!-- Instrução breve para orientar o visitante até ao formulário. -->
+        <p><em>
+          Se preferir pode enviar uma mensagem diretamente no formulário abaixo
+        </em></p>
+        <!-- Recolhe os dados e a mensagem; o método GET envia os valores no pedido. -->
+        <form action="#" method="get">
+          <!-- Agrupa os campos de identificação e contacto do visitante. -->
+          <fieldset>
+            <legend>Informações Pessoais</legend>
+            <!-- Campo obrigatório para indicar o nome do visitante. -->
+            <div>
+              <label for="nome">Nome</label><br>
+              <input
+                type="text"
+                name="nome"
+                id="nome"
+                placeholder="Insira seu nome"
+                required>
+            </div>
+            <!-- Campo obrigatório para indicar um endereço de email válido. -->
+            <div>
+              <label for="email">Email</label><br>
+              <input
+                type="email"
+                name="email"
+                id="email"
+                placeholder="Insira aqui seu email"
+                required>
+            </div>
+            <!-- Campo opcional para fornecer um número de telefone. -->
+            <div>
+              <label for="telefone">Telefone</label><br>
+              <input
+                type="tel"
+                name="telefone"
+                id="telefone"
+                placeholder="+238 *******"
+                optional>
+            </div>
+            
+          </fieldset>
+          <!-- Agrupa a classificação do contacto, o texto e a preferência de resposta. -->
+          <fieldset>
+            <legend>Motivo da Contato</legend>
+            <!-- Permite selecionar o motivo do contacto. -->
+            <div>
+              <label for="assunto">Assunto</label><br>
+              <select id="assunto" name="assunto" required>
+                <option value="">--Selecione Uma Opcao--</option>
+                <option value="proposta de stagio">Proposta de Estágio</option>
+                <option value="proposta de colaboracao">Proposta de Colaboração</option>
+                <option value="esclarecimentos">Duvidas ou Esclarecimentos</option>
+              </select>
+            </div>
+            <!-- Campo obrigatório para escrever a mensagem, entre 10 e 500 caracteres. -->
+            <div>
+              <label for="mensagem">Mensagem</label><br>
+              <textarea
+                name="mensagem"
+                id="mensagem"
+                placeholder="Escreva aqui sua mensagem"
+                rows="5"
+                cols="30"
+                maxlength="500"
+                minlength="10"
+                required>
+              </textarea>
+              <!-- Permite escolher o canal preferido para receber uma resposta. -->
+              <div>
+                <label for="resposta">Como Prefere receber a resposta?</label><br>
+                <!-- Opção de resposta por telefone, selecionada por predefinição. -->
+                <input 
+                  type="radio"
+                  name="resposta"
+                  id="telefone"
+                  value="telefone"
+                  checked>
+                <label for="telefone">Telefone</label><br>
+                <!-- Opção alternativa de resposta por email. -->
+                <input 
+                  type="radio"
+                  name="resposta"
+                  id="email"
+                  value="email">
+                <label for="email">Email</label><br>
+              </div>
+            <div>
+              <label for="autorizacao"></label><br>
+              <input
+                  type="checkbox"
+                  id="autorizacao"
+                  value="sim"
+                  name="autorizacao"    
+                  required>
+                <label for="autorizacao">Autorizo a ulizacao dos meus dados e aceito os termos de utilizacao da plataforma</label>
+            </div>
+          </fieldset>
+           <div>
+            <button type="submit" class="botao">Eviar mensagem</button> 
+            <button type="reset" class="botao-secundario">Limpar formulario</button><br>
+           </div>
+          
+        </form>
+      </section>
+      <section>
+                <h2>Contatos</h2>
+                <table>
+                  <thead>
+                    <tr></tr>
+                      <th>Canal</th>
+                      <th>Informação</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td>E-mail</td>
+                      <td><a href="mailto:edsonmonts524@gmail.com" target="_blank">edsonmonts524@gmail.com</a></td>
+                    </tr>
+                    <tr>
+                      <td>GitHub</td>
+                      <td><a href="https://github.com/Edson524" target="_blank" rel="noreferrer noopener">Edson524</a></td>
+                    </tr>
+                    <tr>
+                      <td>LinkedIn</td>
+                      <td><a href="https://www.linkedin.com/in/edson-monteiro" target="_blank" rel="noreferrer noopener">Edson Monteiro</a></td>
+                    </tr>
+                  </tbody>
+                </table>
+            </section>
+
+        <aside>
+          <p>
+            <strong>Nota:</strong> Costumo responder a todas as mensagens no
+            prazo máximo de 24 horas úteis.
+          </p>
+        </aside>
+      </section>
+    </main>
+
+    <footer>
+            <hr/>
+            <p>&copy; <i><strong>All Rights Reserved, Edson Monteiro / 2026</strong></i></p>
+    </footer>
+    
+  </body>
+</html>
