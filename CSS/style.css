@@ -87,7 +87,7 @@ th {
    -------------------------------------------------------------------------- */
 /* Cartões destacados (projetos e testemunhos), o . significa classes */
 .cartao {
-  background-color: #c4c4c4c8;
+  background-color: #ffffff88;
   border: 1px solid #e2e8f0;
   border-radius: 8px;
   padding: 16px 20px;
@@ -168,4 +168,8 @@ article blockquote {
   margin: 0 0 8px 0;
   font-style: italic;
   color: #334155;
+}
+a:hover
+{
+ color: red;
 }
