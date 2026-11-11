@@ -34,10 +34,10 @@ body {
   color: var(--primary-text);
   background-color: var(--page-background);
   margin: 0px;
-  padding: 10px 0px 10px 0px;
+  padding: 10px 10px 10px 10px;
 }
 h1 {
-  font-size: 2rem;
+  font-size: 2.4rem;
   margin-top: 12px;
   margin-bottom: 8px;
 }
@@ -71,6 +71,18 @@ a {
   color: var(--link-color);
   text-decoration: underline;
 }
+.botaoNav {
+  display: inline-block;
+  background-color: var(--mahogany-red);
+  color: var(--white);
+  padding: 8px 16px;
+  border: 1px solid var(--mahogany-red);
+  border-radius: 25px;
+  text-decoration: none;
+  font-weight: 600;
+  cursor: pointer;
+}
+
 
 img {
   max-width: 100%;
@@ -79,10 +91,91 @@ img {
 
 header {
   display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
   width: 100%;
-  height: 10%;
-  justify-content: space-between;
+  height: auto;
+  align-items: stretch;
+  gap: 15px;
+  box-sizing: border-box;
 }
+
+.imagen {
+  flex: 1 1 30%;
+  min-width: 0;
+}
+
+.imagen img {
+  display: block;
+  width: 100%;
+  height: auto;
+  border-radius: 30px;
+}
+
+.titulos {
+  flex: 1 1 35%;
+  min-width: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 15px;
+  box-sizing: border-box;
+}
+
+.titulos h1 {
+  font-size: clamp(20px, 2.5vw, 38px);
+}
+
+.linkmain {
+  flex: 1 1 35%;
+  min-width: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 15px;
+  box-sizing: border-box;
+}
+
+.linkmain ul {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.linkmain li {
+  flex-shrink: 0;
+}
+
+/* Ecrãs com largura até 1100px */
+@media (max-width: 800px) {
+  header {
+    flex-direction: column;
+  }
+
+  .imagen,
+  .titulos,
+  .linkmain {
+    width: 100%;
+    flex: none;
+  }
+
+  .imagen img {
+    height: auto;
+  }
+
+  .linkmain ul {
+    flex-direction: column;
+  }
+}
+
 
 footer {
   text-align: center;
@@ -140,7 +233,6 @@ th {
   font-weight: 600;
   cursor: pointer;
 }
-
 .botao-secundario {
   background-color: var(--raised-surface);
   border-color: var(--raised-surface);
@@ -180,30 +272,13 @@ nav > { /* hora ki bh poi > seta maior e ta bai pa fidjo direto you mas se bh ca
   margin: 16px 0 0 0;
 }
 
-.linkmain {
-  align-content:center;
-  align-items:center;
-}
 li {
   display:inline;
   list-style: none;
-  border: 1px solid red;
-  border-radius: 10px;
   padding-left: 40px;
   padding-right: 40px;
   
 }
-img {
-  border-radius: 50px;
-  box-shadow: 5px solid #25292d;
-  border: 5px solid #e5383b;
-}
-
-.titulos{
-  align-content:center;
-  align-items:center;
-}
-
 
 nav a {
   text-decoration: none;
