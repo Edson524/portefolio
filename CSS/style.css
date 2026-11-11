@@ -267,18 +267,11 @@ nav a {
    -------------------------------------------------------------------------- */
 
 /* Menu de navegação */
-nav > { /* hora ki bh poi > seta maior e ta bai pa fidjo direto you mas se bh ca usa seta e ta panhal unde ki for basta e sta dente de kel tag pricipal ki bh sa usa */
-  padding: 0;
+/* hora ki bh poi > seta maior e ta bai pa fidjo direto you mas se bh ca usa seta e ta panhal unde ki for basta e sta dente de kel tag pricipal ki bh sa usa */
+/*
+nav > {   padding: 0;
   margin: 16px 0 0 0;
-}
-
-li {
-  display:inline;
-  list-style: none;
-  padding-left: 40px;
-  padding-right: 40px;
-  
-}
+}*/
 
 nav a {
   text-decoration: none;
