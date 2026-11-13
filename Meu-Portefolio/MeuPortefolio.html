@@ -8,26 +8,28 @@
       content="Edson Monteiro, full Stack web developer and app developer"
       name="description"
     />
-    <link rel="stylesheet" href="portefoliocss.css/edsoncss.css">
+    <link rel="stylesheet" href="portefoliocss.css/edsoncss.css" />
     <title>Edson | Portefolio</title>
   </head>
   <body>
     <header>
-      <div>
-        <img src="Portefolio-Imagen/" alt="Edson MONTEIRO" />
-        <h1>Edson Monteiro</h1>
-        <p>Full Stack Developer</p>
+      <div >
+        <div>
+          <img src="Portefolio-Imagen/" alt="Edson MONTEIRO" />
+          <h1>Edson Monteiro</h1>
+          <p>Full Stack Developer</p>
+        </div>
+        <nav>
+          <ul>
+            <li><a href="#inicio"> Inicio</a></li>
+            <li><a href="#sobre">Sobre Min</a></li>
+            <li><a href="#contatos">Contactos</a></li>
+          </ul>
+        </nav>
       </div>
-      <nav>
-        <ul>
-          <li><a href="#inicio"> Inicio</a></li>
-          <li><a href="#sobre">Sobre Min</a></li>
-          <li><a href="#contatos">Contactos</a></li>
-        </ul>
-      </nav>
     </header>
     <main>
-      <section id="inicio">
+      <section id="inicio" class="contatosSection">
         <h2>Minha Caminhada</h2>
         <p>
           Licenciando em Engenharia Informática na UNICV e especializando em
@@ -51,7 +53,7 @@
           </aside>
         </div>
       </section>
-      <section id="sobre">
+      <section id="sobre" class="contatosSection">
         <h2>Meu Historico</h2>
         <table>
           <caption>
@@ -85,6 +87,8 @@
             </tr>
           </tbody>
         </table>
+      </section>
+      <section class="contatosSection">
         <h2>Resultados</h2>
         <div>
           <ul>
@@ -106,6 +110,7 @@
       <section id="contatos" class="contatosSection">
         <div class="contatos"></div>
         <h2>Contactos</h2>
+        <div>
           <ul>
             <li>
               Me envie um e-mail atraves de: <br />
@@ -113,7 +118,6 @@
                 >edsonmonts524@gmail.com</a
               >
             </li>
-            <br />
             <li>
               Ou acesse meu GitHub atraves dessa coneccao:<br />
               <a
