@@ -267,7 +267,8 @@ nav a {
   color: var(--link-color);
   font-weight: 600;
   padding: 6px 12px;
-} /*O que significa `nav a` com espaço?
+} 
+/*O que significa `nav a` com espaço?
 - Significa: *"Procura qualquer elemento `<a>` que esteja **dentro** de um elemento `<nav>`"*.
 - Todos os outros links fora da barra de navegação continuam normais, com o sublinhado habitual.*/
 /* --------------------------------------------------------------------------
