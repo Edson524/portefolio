@@ -41,6 +41,11 @@
 
     <!-- Corpo principal do site -->
     <main>
+      <audio src="audio/audio-fundo.mp3" controls autoplay preload="metadata">
+        <source src="audio/audio-fundo.mp3"
+        type="audio/mp3">
+        <p>Seu browser e um lixo</p>
+      </audio>
       <section>
         <h2>Currículo Profissional</h2>
 
@@ -52,19 +57,42 @@
               Licenciando em Engenharia Informática e Computadores na
               Universidade de Cabo Verde.
             </li>
-            <li>
-              Formando em Desenvolvimento de aplicativos web Full Stack.
-            </li>
+            <li>Formando em Desenvolvimento de aplicativos web Full Stack.</li>
             <li>Part time app Developer.</li>
           </ol>
         </div>
         <h3>1.2 EXPERIÊNCIA PROFISSIONAL</h3>
         <div>
           <ul class="cartao1">
-            <li>Assistente de Delegado da Comissão Nacional de Eleições (CNE) em 2024.</li>
+            <li>
+              Assistente de Delegado da Comissão Nacional de Eleições (CNE) em
+              2024.
+            </li>
             <li>Assistente Tecnico da ASA na 6ª convencao Bieanal na UniCV.</li>
             <li>MoodMapZone App Developer</li>
           </ul>
+        </div>
+      </section>
+      <section class="videotest">
+        <h2>Apresentacao de um pequeno video</h2>
+        <div class="videotestdiv">
+          <video loop muted controls>
+            <source src="video/naosobrounada.mp4" type="video/mp4" />
+            <p>O seu Browser nao reenderisou o video</p>
+            <track
+              kind="subtitles"
+              srclang="pt"
+              src="video/apresentacao.vtt"
+              label="Portugues"
+              default
+            />
+            <figcaption>
+              <p>Nao Sobrou Nada</p>
+            </figcaption>
+          </video>
+        </div>
+        <div baixar>
+          <a href="video/naosobrounada.mp4" download>Baixar o Video</a>
         </div>
       </section>
       <section>

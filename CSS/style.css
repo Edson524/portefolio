@@ -2,25 +2,32 @@
    Portefólio Pessoal —- Edson Monteiro
    Folha de Estilos Principal
    ========================================================================== */
+
+
+
 :root {
-  --onyx: #0b090a;
-  --carbon-black: #161a1d;
-  --dark-garnet: #660708;
-  --mahogany-red: #a4161a;
-  --mahogany-red-2: #ba181b;
-  --strawberry-red: #e5383b;
-  --silver: #b1a7a6;
-  --dust-grey: #454044;
-  --white-smoke: #f5f3f4;
-  --white: #ffffff;
-  --page-background: var(--carbon-black);
-  --surface: var(--carbon-black);
-  --raised-surface: #25292d;
-  --primary-text: var(--white-smoke);
-  --secondary-text: var(--silver);
-  --border-color: var(--dust-grey);
-  --link-color: var(--strawberry-red);
-  --link-hover-color: var(--white-smoke);
+  /* Paleta Soft Sand */
+  --ivory: #faf7f2;
+  --oat-milk: #ede6dc;
+  --soft-sand: #d8c9b8;
+  --warm-taupe: #a99b8c;
+  --mocha: #655b52;
+
+  /* Cores do tema */
+  --page-background: var(--ivory);
+  --surface: var(--oat-milk);
+  --raised-surface: #ffffff;
+
+  /* Textos */
+  --primary-text: var(--mocha);
+  --secondary-text: #756b61;
+
+  /* Bordas */
+  --border-color: var(--soft-sand);
+
+  /* Links */
+  --link-color: #76604e;
+  --link-hover-color: var(--mocha);
 }
 
 body {
@@ -295,4 +302,19 @@ article blockquote {
 }
 a:hover {
   color: var(--link-hover-color);
+}
+
+video
+{
+  width: 50%;
+  display: block;
+  border-radius: 8px;
+  background-color: aqua;
+}
+.videotestdiv
+{
+  padding: 20px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
 }
