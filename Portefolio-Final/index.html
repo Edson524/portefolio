@@ -1,0 +1,136 @@
+<!doctype html>
+<html lang="pt-PT">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Portefólio pessoal de Ana Martins, futura programadora web em Setúbal. Apresentação, percurso de formação e projetos práticos."
+    />
+    <meta name="author" content="Ana Martins" />
+    <title>Ana Martins | Portefólio</title>
+    <link rel="icon" type="image/svg+xml" href="imagens/favicon.svg" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@600;700&display=swap"
+      rel="stylesheet"
+    />
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <link rel="stylesheet" href="css/styles.css" />
+  </head>
+  <body>
+    <header>
+      <div id="profile-photo" class="images">
+        <img
+          src="images/foto.svg"
+          alt="Profile Picture"
+          width="100%"
+          height="100%"
+        />
+      </div>
+      <div id="title">
+        <h1>Edson Monteiro</h1>
+        <p>Web Developer and <strong>Gamer</strong></p>
+      </div>
+      <!-- Fotografia (imagens/foto.svg, 160 x 160, com alt), nome num h1 e frase de apresentação -->
+
+      <nav>
+        <ul>
+          <li><a href="index.html">Início</a></li>
+          <li><a href="projetos.html">Projetos</a></li>
+          <li><a href="contactos.html">Contactos</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main>
+      <section id="sobremim">
+        <h2>Sobre Mim</h2>
+
+        <div class="conteudo">
+          <div id="left">
+            <p>Licenciando em Engenharia Informática na UNICV.</p>
+            <p>
+              E no momento estou me especializando em Desenvolvimento
+              <span lang="en">Web Full Stack</span>
+            </p>
+          </div>
+
+          <div id="right">
+            <h3>Especialidades</h3>
+            <ul class="etiquetas">
+              <li>Programação em C</li>
+              <li>Desenvolvimento em C#</li>
+              <li>Scripts em Python</li>
+              <li>HTML5</li>
+              <li>CSS3</li>
+              <li>Conhecimentos básico em Assembly</li>
+            </ul>
+          </div>
+        </div>
+
+        <aside>
+          <strong>Uma curiosidade:</strong>
+          A linguagem Assembly é considerada por muitos a linguagem mais difícil
+          de se compreender.
+        </aside>
+      </section>
+
+      <section>
+        <!-- Apresentação em vídeo: h2 e figure com video (controls, poster,
+             source e track com as legendas) e figcaption -->
+        <h2>Meu Percurso</h2>
+      </section>
+
+      <section id="percurso" class="mt-11 flex flex-col gap-10">
+        <!-- O meu percurso: h2, parágrafo e tabela dentro de
+             div class="tabela-responsiva" -->
+        <table class="outline outline-2">
+          <caption>
+            <strong>Minha Carreira ate agora</strong>
+          </caption>
+          <thead class="border-b-2">
+            <tr>
+              <th scope="col">Ano</th>
+              <th scope="col"></th>
+              <th scope="col">Tipo de Servico</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <th scope="row">2024</th>
+              <td>Comicao Nacional de Eleicoes(CNE)</td>
+              <td>Assistente (Tecnico) do Delegado</td>
+            </tr>
+            <tr>
+              <th scope="row">2025</th>
+              <td>
+                Sexta Conferencia Bienal (ASAA-African Studies Association of
+                Arica)
+              </td>
+              <td>Assistente Tecnico da Conferencia</td>
+            </tr>
+            <tr>
+              <th scope="row">2026</th>
+              <td>Contratante Privado</td>
+              <td>Desenvolvedor do aplicativo MoodMapZone(MMP)</td>
+            </tr>
+          </tbody>
+        </table>
+      </section>
+
+      <section>
+        <!-- O que dizem de mim: h2 e article class="cartao" com blockquote -->
+      </section>
+
+      <section>
+        <!-- Contacto rápido: h2, parágrafo e div class="acoes" com dois botões -->
+      </section>
+    </main>
+
+    <footer>
+      <!-- © 2026 e o vosso nome; lista class="redes" com os links E-mail e GitHub -->
+    </footer>
+  </body>
+</html>
