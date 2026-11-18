@@ -1,148 +1,315 @@
-/* ==========================================================================
-   Portefólio Pessoal — Ana Martins
-   Folha de Estilos Principal (mobile-first: primeiro o telemóvel,
-   depois os ecrãs maiores, na secção 7)
-   As cores e as medidas que se repetem estão em variáveis, no :root.
-   ========================================================================== */
-
-/* --------------------------------------------------------------------------
-   1. Base: caixas, corpo da página e largura do conteúdo
-   -------------------------------------------------------------------------- */
-
-/* Variáveis: a paleta e as medidas que se repetem, num só sítio.
-   Para mudar uma cor no site todo, basta mudá-la aqui. */
 :root {
-  --cor-principal: #0f766e;
-  --cor-principal-escura: #115e59;
-  --cor-principal-media: #99f6e4;
-  --cor-principal-clara: #f0fdfa;
-  --cor-titulos: #134e4a;
-  --cor-texto: #1f2937;
-  --cor-texto-secundario: #6b7280;
-  --cor-bordas: #e5e7eb;
-  --cor-bordas-campos: #d1d5db;
-  --cor-fundo: #f8fafc;
-  --cor-branca: #ffffff;
-  --cor-fundo-header: #fefefe;
-  --cor-realce: #ea580c;
-  --cor-realce-clara: #fff7ed;
-  --raio: 12px;
-  --sombra: 0 2px 8px rgba(15, 23, 42, 0.08);
-  --sombra-forte: 0 8px 20px rgba(15, 23, 42, 0.14);
+  /* Superfícies */
+  --surface: #faf9f6;
+  --surface-dim: #dbdad7;
+  --surface-bright: #faf9f6;
+  --surface-container-lowest: #ffffff;
+  --surface-container-lowest1: #ffffffb2;
+  --surface-container-low: #f4f3f1;
+  --surface-container: #efeeeb;
+  --surface-container-high: #e9e8e5;
+  --surface-container-highest: #e3e2e0;
+  --section-background-1: #eef1f4;
+  --section-background-2: #fafbfc;
+
+  /* Textos e contornos */
+  --on-surface: #1a1c1a;
+  --on-surface-variant: #4a4640;
+  --inverse-surface: #2f312f;
+  --inverse-on-surface: #f2f1ee;
+  --outline: #7b766f;
+  --outline-variant: #ccc6bd;
+  --surface-tint: #605e5c;
+
+  /* Cores principais */
+  --primary: #000000;
+  --on-primary: #ffffff;
+  --primary-container: #1c1b1a;
+  --on-primary-container: #868382;
+  --inverse-primary: #cac6c4;
+
+  /* Cores secundárias */
+  --secondary: #825338;
+  --on-secondary: #ffffff;
+  --secondary-container: #fdbe9d;
+  --on-secondary-container: #794b31;
+
+  /* Cores terciárias */
+  --tertiary: #000000;
+  --on-tertiary: #ffffff;
+  --tertiary-container: #131e11;
+  --on-tertiary-container: #7a8875;
+
+  /* Cores de erro */
+  --error: #ba1a1a;
+  --on-error: #ffffff;
+  --error-container: #ffdad6;
+  --on-error-container: #93000a;
+
+  /* Variações da cor principal */
+  --primary-fixed: #e6e2df;
+  --primary-fixed-dim: #cac6c4;
+  --on-primary-fixed: #1c1b1a;
+  --on-primary-fixed-variant: #484645;
+
+  /* Variações da cor secundária */
+  --secondary-fixed: #ffdbca;
+  --secondary-fixed-dim: #f7b997;
+  --on-secondary-fixed: #321201;
+  --on-secondary-fixed-variant: #673c23;
+
+  /* Variações da cor terciária */
+  --tertiary-fixed: #d9e7d1;
+  --tertiary-fixed-dim: #bdcbb6;
+  --on-tertiary-fixed: #131e11;
+  --on-tertiary-fixed-variant: #3e4a3a;
+
+  /* Fundo */
+  --background: #faf9f6;
+  --on-background: #1a1c1a;
+  --surface-variant: #e3e2e0;
 }
-
-/* box-sizing para todos os elementos, body e main centrado */
-
-/* --------------------------------------------------------------------------
-   2. Texto e fontes
-   -------------------------------------------------------------------------- */
-
-/* Títulos com a Poppins, parágrafos, links, imagens, figure, video e figcaption */
-
-/* --------------------------------------------------------------------------
-   3. Cabeçalho, menu e rodapé
-   -------------------------------------------------------------------------- */
+body {
+  background-color: var(--surface);
+}
 header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: var(--surface);
+  padding: 15px 60px;
+  min-height: 50px;
+}
+#f {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+#f h2 {
+  font-family: "Newsreader", serif;
+  font-size: 24px;
+  font-weight: 400;
+  color: var(--on-surface);
+  margin: 0;
+}
+#f p {
+  font-family: "Manrope", sans-serif;
+  font-size: 11px;
+  color: var(--on-surface-variant);
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  margin: 0;
+}
+#g {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 25px;
+}
+header img {
+  width: 10%;
+}
+#menu {
+  display: flex;
+  align-items: center;
+  gap: 35px;
+}
+#menu a {
+  font-family: "Manrope", sans-serif;
+  font-size: 12px;
+  font-weight: 600;
+  text-transform: uppercase;
+  text-decoration: none;
+  color: var(--on-surface-variant);
+}
+#menu a:hover {
+  color: var(--secondary);
+}
+header button {
+  background-color: var(--primary);
+  color: var(--on-primary);
+  border: none;
+  border-radius: 4px;
+  padding: 12px 20px;
+
+  font-family: "Manrope", sans-serif;
+  font-size: 12px;
+  font-weight: 600;
+  text-transform: uppercase;
+  cursor: pointer;
+}
+header button:hover {
+  background-color: var(--secondary);
+}
+header img {
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+#introducao {
+  background-color: var(--section-background-2);
+}
+#photo1 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: 20px;
+  padding-bottom: 10px;
+}
+#photo1 img {
+  width: 10%;
+  border-radius: 10px solid var(--on-primary-container);
+}
+#introducaonome {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  background-color: var(--cor-fundo-header);
-  text-align: center;
-  border-bottom: 2px solid var(--cor-bordas);
-  box-shadow: var(--sombra);
-  padding: 10px 0px;
 }
-#profile-photo {
-  width: 20%;
-  height: 100px;
-}
-header h1
-{
-   color: var(--cor-titulos);
-}
-header p
-{
-   color: var(--cor-texto-secundario);
-}
-nav ul {
+#introducaonome nav {
   display: flex;
   flex-direction: row;
+  gap: 30px;
   list-style: none;
-  gap: 35px;
+}
+#introducaonome nav a {
+  text-decoration: none;
+  color: var(--on-surface-variant);
+}
+#photo-paisagem {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 55px 45px;
+}
+#photo-paisagem img {
+  border-radius: 3px;
+  width: 100%;
+}
+#biografia {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: center;
+    background-color: var(--surface-container-low);
+    padding: 64px 200px;
+    gap: 40px;
+}
+#first {
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+}
+#first h2 {
+    font-family: "Newsreader", serif;
+    font-size: 48px;
+    font-weight: 400;
+    line-height: 1.2;
+    color: var(--on-surface);
+    margin: 10px 0 20px;
+}
+#first p {
+    font-family: "Newsreader", serif;
+    font-size: 18px;
+    line-height: 1.7;
+    color: var(--on-surface-variant);
+    margin: 0 0 15px;
+}
+
+#second {
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.cartao-especialidade {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  background-color: var(--surface-container-lowest1);
+  border-radius: 3px;
+  padding: 15px;
+}
+.cartao-curiosidade {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 2px;
+  background-color: var(--surface-container-lowest1);
+  border-radius: 8px;
+  padding: 36px;
+}
+.rodape-curiosidade {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    margin-top: 20px;
+    font-family: "Manrope", sans-serif;
+    font-size: 11px;
+    color: var(--on-surface-variant);
+}
+
+.cartao-curiosidade h3 {
+  font-family: "Manrope", sans-serif;
+  font-size: 11px;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--secondary);
   margin: 0;
-  margin-bottom: 10px;
+}
+.cartao-curiosidade h4 {
+  font-family: "Manrope", sans-serif;
+  font-size: 11px;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--secondary);
+  margin: 0;
+}
+
+.cartao-curiosidade p {
+  font-family: "Newsreader", serif;
+  font-size: 24px;
+  line-height: 1.35;
+  font-style: italic;
+  color: var(--on-surface);
+  margin: 0;
+}
+h6 {
+  font-family: "Manrope", sans-serif;
+  font-size: 11px;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--secondary);
+  margin: 0;
+}
+h1 {
+  color: var(--on-surface);
+}
+p {
+  color: var(--on-surface-variant);
+}
+h2 h3 h4 h5 h6 {
+  color: var(--secondary);
+}
+#biografia div ul {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 12px;
   padding: 0;
 }
-nav ul li {
-  padding: 6px 12px;
-  border: none;
-  
+#biografia div img {
+  width: 100%;
 }
-nav ul li:hover
-{
-   background-color: var(--cor-realce-clara);
-   border-bottom: 2px solid var(--cor-realce);
-   border-radius: 7px;
+#second {
+  width: 40%;
 }
-nav ul a {
-  text-decoration: none;
-  color: var(--cor-texto);
-  font-size: 16pt;
+#curiculo {
 }
-nav ul a:active
-{
-   border-bottom: 2px solid var(--cor-realce);
+#testemunho {
 }
-h2
-{
-   color: var(--cor-titulos);
-   font-size: 20pt;
+#contatos {
 }
-h3
-{
-   color: var(--cor-titulos);
-   font-size: 16pt;
-}
-.etiquetas
-{
-   display: flex;
-   flex: 2;
-   justify-content: space-evenly;
-   list-style: none;
-}
-.etiquetas li
-{
-   background-color: rgba(0, 255, 255, 0.116);
-   border: 2px solid var(--cor-principal-escura);
-   padding: 6px 12px;
-   border-radius: var(--raio);
-}
-
-
-
-/* header, menu com Flexbox, rodapé em coluna e lista .redes */
-
-/* --------------------------------------------------------------------------
-   4. Tabelas e formulários
-   -------------------------------------------------------------------------- */
-
-/* .tabela-responsiva, table, caption, th e td, fieldset, legend, label e campos */
-
-/* --------------------------------------------------------------------------
-   5. Componentes reutilizáveis (classes)
-   -------------------------------------------------------------------------- */
-
-/* .cartao, .curiosidade, .destaque, .botao, .etiquetas, .acoes e .grelha-projetos */
-
-/* --------------------------------------------------------------------------
-   6. Elementos únicos (id)
-   -------------------------------------------------------------------------- */
-
-/* #formulario-contacto */
-
-/* --------------------------------------------------------------------------
-   7. Ecrãs maiores (media queries)
-   -------------------------------------------------------------------------- */
-
-/* @media (min-width: 768px): títulos maiores, rodapé numa linha e grelha de 2 colunas */
