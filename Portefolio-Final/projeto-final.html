@@ -5,7 +5,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="description" content="" />
     <meta name="author" content="Rui Costa" />
-
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700&family=Newsreader:ital,wght@0,400;0,500;1,400&display=swap"
+      rel="stylesheet"
+    />
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
     <link rel="stylesheet" href="css/styles.css" />
     <title>Rui Costa - Portefolio</title>
@@ -39,8 +44,8 @@
           <h1>Rui Costa</h1>
           <p>Fotógrafo de <strong>casamentos e paisagens</strong>, no Porto.</p>
           <nav>
-            <a href="#inicio">Início</a>/ <a href="#sobre">Sobre</a>/
-            <a href="#servicos">Serviços</a>/
+            <a href="#introducao">Início</a>/ <a href="#sobre">Sobre</a>/
+            <a href="#curiculo">Serviços</a>/
             <a href="#contactos">Contactos</a>
           </nav>
         </div>
@@ -51,7 +56,7 @@
           />
         </div>
       </section>
-      <section id="biografia" id="sobre">
+      <section class="biografia" id="sobre">
         <div id="first">
           <div>
             <h6>01 / BIOGRAFIA</h6>
@@ -103,101 +108,135 @@
         </div>
       </section>
 
-      <section id="servicos">
-        <h1>Exposições e Reconhecimento</h1>
-        <p>Alguns dos momentos mais marcantes do meu percurso fotográfico:</p>
+      <section id="curiculo">
+        <div id="titulocuriculo">
+          <p>02 / CURRÍCULO • ARQUIVO</p>
+          <h2>Exposições e Reconhecimento</h2>
+          <p>Alguns dos momentos mais marcantes do meu percurso fotográfico:</p>
+        </div>
+        <div id="tabela">
+          <table>
+            <caption>
+              Histórico de exposições e distinções de Rui Costa
+            </caption>
 
-        <table>
-          <caption>
-            Histórico de exposições e distinções de Rui Costa
-          </caption>
+            <thead>
+              <tr>
+                <th scope="col">Ano</th>
+                <th scope="col">Exposição/Distinção</th>
+                <th scope="col">Galeria/Organização</th>
+                <th scope="col">Cidade</th>
+              </tr>
+            </thead>
 
-          <thead>
-            <tr>
-              <th scope="col">Ano</th>
-              <th scope="col">Exposição/Distinção</th>
-              <th scope="col">Galeria/Organização</th>
-              <th scope="col">Cidade</th>
-            </tr>
-          </thead>
+            <tbody>
+              <tr>
+                <td>2025</td>
+                <td>Exposição Individual "Luzes do Douro"</td>
+                <td>Galeria Municipal</td>
+                <td>Porto</td>
+              </tr>
 
-          <tbody>
-            <tr>
-              <td>2025</td>
-              <td>Exposição Individual "Luzes do Douro"</td>
-              <td>Galeria Municipal</td>
-              <td>Porto</td>
-            </tr>
+              <tr>
+                <td>2024</td>
+                <td>Menção Honrosa em Fotografia de Paisagem</td>
+                <td>Festival de Fotografia do Norte</td>
+                <td>Braga</td>
+              </tr>
 
-            <tr>
-              <td>2024</td>
-              <td>Menção Honrosa em Fotografia de Paisagem</td>
-              <td>Festival de Fotografia do Norte</td>
-              <td>Braga</td>
-            </tr>
-
-            <tr>
-              <td>2022</td>
-              <td>Exposição Coletiva "Gentes do Norte"</td>
-              <td>Centro Cultural Regional</td>
-              <td>Guimarães</td>
-            </tr>
-          </tbody>
-        </table>
+              <tr>
+                <td>2022</td>
+                <td>Exposição Coletiva "Gentes do Norte"</td>
+                <td>Centro Cultural Regional</td>
+                <td>Guimarães</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
       </section>
 
-      <section>
-        <h2>O que dizem os clientes</h2>
-        <p>
-          <em
-            >«As fotografias do nosso casamento são o nosso maior tesouro.»</em
-          >
-          <br />
-          - Marta e Pedro, Casaram em 2025
-        </p>
-        <img
-          src="images/marta-pedro-casamento.jpg"
-          alt="Fotografia de Marta e Pedro de casamento"
-        />
+      <section id="testemunho">
+        <div id="titulo-testemunho">
+          <span>03 / TESTEMUNHO</span>
+          <h2>O que dizem os clientes</h2>
+        </div>
+
+        <div class="cartao-testemunho">
+          <span class="aspas">99 </span>
+
+          <p class="citacao">
+            «As fotografias do nosso casamento são o nosso maior tesouro.»
+          </p>
+
+          <div class="cliente">
+            <img
+              src="img/marta-pedro-casamento.jpg"
+              alt="Fotografia de Marta e Pedro"
+            />
+            <span>— Marta e Pedro, casaram em 2025</span>
+          </div>
+
+          <div class="local-testemunho">
+            <span>Quinta da Gricha</span>
+            <span>•</span>
+            <span>Douro</span>
+          </div>
+        </div>
       </section>
 
       <section id="contactos">
+        <span class="subtitulo">04 / AGENDAMENTO</span>
+
         <h2>Contacto rápido</h2>
+
         <p>
           Têm dúvidas sobre as datas disponíveis? Enviem um e-mail para
-          <a href="rui.costa@exemplo.pt">rui.costa@exemplo.pt </a> ou peçam um
-          orçamento através da
+          <a href="mailto:rui.costa@exemplo.pt"> rui.costa@exemplo.pt </a>
+          ou peçam um orçamento através da
         </p>
 
-        <div>
-          <button type="submit">Página de Contactos</button> <br />
-          <button type="submit">Enviar Mensagem Direta</button>
-          <button type="submit">Pedir Orçamento 2026/27</button>
+        <div class="botao-contactos">
+          <button type="button">Página de Contactos</button>
         </div>
+
+        <div class="botoes-principais">
+          <button type="button">Enviar Mensagem Direta</button>
+          <button type="button">Pedir Orçamento 2026/27</button>
+        </div>
+
+        <p class="informacoes-contactos">
+          Resposta em menos de 24 horas &nbsp; • &nbsp; Atelier em Miguel
+          Bombarda
+        </p>
       </section>
     </main>
 
     <footer>
-      <h3>Rui Costa - Fotografia</h3>
-      <p>
-        Luz atlântica, granito e narrativa documental. <br />
-        Casamentos e paisagem autoral no Porto e Douro.
-      </p>
+      <div class="footer-conteudo">
+        <div class="footer-sobre">
+          <h3>Rui Costa — Fotografia</h3>
+          <p>
+            Luz atlântica, granito e narrativa documental. Casamentos e paisagem
+            autoral no Porto e Douro.
+          </p>
+        </div>
 
-      <h6>Estúdio</h6>
-      <p>
-        Rua de Miguel Bombarda, Porto <br />
-        <a href="atelier@ruicosta.pt">atelier@ruicosta.pt</a>
-      </p>
+        <div class="footer-estudio">
+          <h6>Estúdio</h6>
+          <p>Rua de Miguel Bombarda, Porto</p>
+          <a href="mailto:atelier@ruicosta.pt"> atelier@ruicosta.pt </a>
+        </div>
 
-      <h6>Galeria & Editorial</h6>
-      <p>
-        Disponibilidade Limitada <br />
-        2026/2027
-      </p>
+        <div class="footer-galeria">
+          <h6>Galeria & Editorial</h6>
+          <p>Disponibilidade Limitada 2026/2027</p>
+        </div>
+      </div>
 
-      <p>&copy; 2026 Rui Costa. Todos os direitos reservados.</p>
-      <p>Porto • Portugal</p>
+      <div class="footer-inferior">
+        <p>© 2026 Rui Costa. Todos os direitos reservados.</p>
+        <p>Porto • Portugal</p>
+      </div>
     </footer>
   </body>
 </html>
