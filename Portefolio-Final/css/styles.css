@@ -639,6 +639,21 @@ header img {
   max-width: none;
   margin-top: 20px;
 }
+.iconecolor{
+  filter: invert(100%);
+}
+button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+}
+
+button img {
+  width: 18px;
+  height: 18px;
+}
+
 
 /* ==========================================================================
    9. SESSAO PEZINHO NA REGUA / ESTO E PARA LOS OTROS SIUUUUUUUUUUUUUUUUU
@@ -994,4 +1009,3 @@ img {
     padding: 28px 16px;
   }
 }
-/*falta poi kes icones cu imagens ou que na botom e otos lugar*/
